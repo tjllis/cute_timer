@@ -1,5 +1,11 @@
 # 🍅 My Cute Timer
 
+<p align="center">
+  <img src="./screenshots/start.png" width="30%" />
+  <img src="./screenshots/running.png" width="30%" />
+  <img src="./screenshots/done.png" width="30%" />
+</p>
+
 A minimalist Pomodoro timer desktop application built with Electron, React, and TypeScript. Stay focused and productive with this cute timer that helps you manage your work sessions.
 
 > **Note**: This is my first desktop application! Built as a learning project to explore Electron, React, and TypeScript.
@@ -35,7 +41,7 @@ A minimalist Pomodoro timer desktop application built with Electron, React, and 
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/tjllis/cute_timer.git
 cd my-cute-timer
 ```
 
