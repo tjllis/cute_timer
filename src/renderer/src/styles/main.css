@@ -1,0 +1,238 @@
+@import './base.css';
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.app-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+}
+
+.title-bar {
+	z-index: 1;
+	position: absolute;
+	padding-top: 10px;
+	-webkit-app-region: drag;
+	width: 100%;
+	height: 7%;
+	flex-direction: row;
+	color: var(--dark-p);
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+
+.title-bar span {
+	font-weight: bold;
+	opacity: 0.7;
+}
+
+.win-controls {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	left: 10px;
+	-webkit-app-region: no-drag;
+}
+
+.control-btn {
+	margin: 0 2px;
+	padding: 0;
+	border: none;
+	border-radius: 50px;
+	height: 17px;
+	width: 17px;
+	text-align: center;
+}
+
+.control-btn svg {
+	font-size: 10px;
+	color: var(--light-p);
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+
+.win-controls:hover .control-btn svg {
+	opacity: 1;
+}
+
+.close-btn {
+	background-color: var(--dark-p);
+}
+
+.min-btn {
+	background-color: var(--peach);
+}
+
+.timer {
+	height: 100%;
+	margin-top: 35px;
+	gap: 30px;
+	flex-direction: column;
+}
+
+#gradient:first-child {
+	stop-color: var(--coral);
+	stop-opacity: 1;
+}
+
+#gradient:last-child {
+	stop-color: var(--light-p);
+	stop-opacity: 1;
+}
+
+.timer-circle {
+	position: relative;
+	width: 250px;
+	aspect-ratio: 1/1;
+	/* background: rgba(255, 0, 0, 0.1); */
+}
+
+.timer-svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: rotate(-90deg);
+}
+
+.back-circle {
+	fill: none;
+	stroke: var(--peach);
+	stroke-width: 15;
+	stroke-linecap: round;
+}
+
+.progress-circle {
+	fill: none;
+	stroke: var(--coral);
+	stroke-width: 15;
+	/* stroke-linecap: square; */
+	transition: stroke-dashoffset 0.5s linear;
+}
+
+.timer-display h1 {
+	font-size: 52px;
+}
+
+.timer-display h1:first-child,
+.timer-display h1:last-child {
+	width: 100px;
+}
+
+.timer-display h1:first-child {
+	text-align: right;
+}
+
+.timer-display h1:last-child {
+	text-align: left;
+}
+
+.buttons-container {
+	gap: 15px;
+}
+
+.buttons-container button {
+	color: var(--light-p);
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-align: center;
+	font-weight: bold;
+	background-color: var(--coral);
+	border: none;
+	width: 70px;
+	height: 35px;
+	border-radius: 40px;
+	transition: transform 0.1s;
+}
+
+/* box-shadow:
+[inset] - optional, shadow inside the borders
+<offset-x> <offset-y> - required
+<blur-radius> - required
+<spread-radius> - optional (negative/positive)
+<color>; - required */
+
+.buttons-container button:hover {
+	box-shadow:
+		2px 2px 5px var(--pink),
+		-2px -2px 5px var(--pink);
+	cursor: pointer;
+}
+
+.buttons-container button:active {
+	background-color: var(--peach);
+	color: var(--dark-p);
+	transform: scale(0.95);
+}
+
+.custom-notification {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 215px;
+	aspect-ratio: 1/1;
+	flex-direction: column;
+	gap: 5px;
+	background: var(--light-p);
+	border: 3px solid var(--pink);
+	border-radius: 20px;
+	padding: 20px;
+	z-index: 1000;
+	text-align: center;
+	box-shadow: 0 10px 40px var(--pink);
+	animation: slideIn 0.3s;
+}
+
+.custom-notification h1 {
+	margin: 0 10px;
+	font-weight: bold;
+	color: var(--coral);
+	font-size: 24px;
+}
+
+.custom-notification p {
+	/* margin: 0 0 5px 0; */
+	color: var(--dark-p);
+	font-size: 18px;
+}
+
+.custom-notification button {
+	background-color: var(--coral);
+	color: var(--light-p);
+	border: none;
+	width: 100px;
+	height: 40px;
+	border-radius: 20px;
+	margin-top: 10px;
+	font-size: 16px;
+	/* text-align: center; */
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.2s;
+	/* transform-origin: center center; - sets the pivot-point for transformations */
+	will-change: transform; /* tells the browser that the element will change */
+}
+
+.custom-notification button:hover {
+	background-color: var(--dark-p);
+	transform: scale(1.05);
+}
+
+@keyframes slideIn {
+	from {
+		opacity: 0;
+		transform: translate(-50%, -60%);
+	}
+	to {
+		opacity: 1;
+		transform: translate(-50%, -50%);
+	}
+}
