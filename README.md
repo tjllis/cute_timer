@@ -29,7 +29,24 @@ A minimalist Pomodoro timer desktop application built with Electron, React, and 
 - **electron-builder** - Application packaging and distribution
 - **React Icons** - Icon library
 
-## 📦 Installation
+## 📥 Download & Install
+
+Don't want to build it yourself? Grab the latest version for your computer from the [Releases Page](https://github.com/tjllis/cute_timer/releases).
+
+- **Windows:** Download the .exe file.
+- **Mac:** Download the .dmg file.
+- **Linux:** Download the .AppImage file.
+
+## 🎯 Usage
+
+1. **Start the Timer**: Click the "Start" button to begin a 25-minute Pomodoro session
+2. **Pause**: Click "Pause" to temporarily stop the timer
+3. **Stop**: Click "Stop" to reset the timer back to 25:00
+4. **Notification**: When the timer reaches zero, an alarm will sound and a notification will appear
+5. **Window Controls**: Use the minimize and close buttons in the custom title bar
+
+<details>
+<summary><strong>📦 Development Setup (Click to Expand)</strong></summary>
 
 ### Prerequisites
 
@@ -42,7 +59,7 @@ A minimalist Pomodoro timer desktop application built with Electron, React, and 
 
 ```bash
 git clone https://github.com/tjllis/cute_timer.git
-cd my-cute-timer
+cd cute_timer
 ```
 
 2. Install dependencies:
@@ -51,7 +68,7 @@ cd my-cute-timer
 pnpm install
 ```
 
-## 🚀 Development
+## 🚀 Running Locally
 
 Start the development server with hot reload:
 
@@ -106,14 +123,6 @@ Built applications will be available in the `dist/` directory.
 - `pnpm typecheck` - Run TypeScript type checking
 - `pnpm format` - Format code with Prettier
 
-## 🎯 Usage
-
-1. **Start the Timer**: Click the "Start" button to begin a 25-minute Pomodoro session
-2. **Pause**: Click "Pause" to temporarily stop the timer
-3. **Stop**: Click "Stop" to reset the timer back to 25:00
-4. **Notification**: When the timer reaches zero, an alarm will sound and a notification will appear
-5. **Window Controls**: Use the minimize and close buttons in the custom title bar
-
 ## 📁 Project Structure
 
 ```
@@ -145,6 +154,7 @@ const totalTime = 25 * 60; // Change 25 to your desired minutes
 - [VSCode](https://code.visualstudio.com/)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+</details>
 
 ## 📄 License
 
