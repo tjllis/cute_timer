@@ -48,7 +48,7 @@ Linux: Download the .AppImage file.
 5. **Window Controls**: Use the minimize and close buttons in the custom title bar
 
 <details>
-<summary>📦 Development Setup (Click to Expand)</summary>
+<summary><strong>📦 Development Setup (Click to Expand)</strong></summary>
 
 ### Prerequisites
 
