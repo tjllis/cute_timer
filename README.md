@@ -29,13 +29,24 @@ A minimalist Pomodoro timer desktop application built with Electron, React, and 
 - **electron-builder** - Application packaging and distribution
 - **React Icons** - Icon library
 
-## 📥 Download & Install
+## � Getting Started
 
-Don't want to build it yourself? Grab the latest version for your computer from the [Releases Page](https://github.com/tjllis/cute_timer/releases).
+### Try the Web Version (Easiest!)
 
-- **Windows:** Download the .exe file.
-- **Mac:** Download the .dmg file.
-- **Linux:** Download the .AppImage file.
+Don't want to install anything? Try the web version at **[tjllis.github.io/cute-timer-web](https://tjllis.github.io/cute-timer-web/)** - it works directly in your browser!
+
+### Build It Locally
+
+Want the desktop app? Clone this repo and build it yourself:
+
+```bash
+git clone https://github.com/tjllis/cute_timer.git
+cd cute_timer
+pnpm install
+pnpm build
+```
+
+> **Note**: Pre-built downloads are not recommended as the app is not digitally signed/notarized (especially important for macOS users).
 
 ## 🎯 Usage
 
